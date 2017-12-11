@@ -1,0 +1,41 @@
+<template>
+  <div id="auth">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4 col-md-offset-4 authForm">
+                  <h2 class="text-center">Beeper</h2>
+                  <transition name="fade">
+                    <router-view></router-view>
+                  </transition>
+              </div>
+          </div>
+      </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'auth',
+
+}
+</script>
+
+<style>
+    #auth {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .authForm {
+        background: #ffffff;
+        padding-bottom: 15px;
+        padding-top: 10px;
+    }
+
+    .flat{
+        border-radius: 0px;
+    }
+</style>
+
+
